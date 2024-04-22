@@ -1,0 +1,120 @@
+/*   By: almishch <almishch@student.your42network>  +#+  +:+       +#+        */
+/*                                                        :::      ::::::::   */
+        while (n-- >0)
+        {
+            d[n]=s[n]; /*kopirovanie elementov s konza massiva*/
+        }
+    }
+        else  /*kopirovanie s nachala v konez, esli dst raspolozen do src*/
+            while   (i<n)
+              {
+                d[i]=s[i];  /*kopirovanie elementov s nachala*/
+                i++;
+            }
+
+    return(dst); /*vozvrat ukazatelia na oblast naznachenia*/
+}
+    int main ()
+{
+    char test[10] = "Test";
+    printf("%s\n", test);
+    return(0);
+}
+
+~
+~
+ft_memmove.c [+]                                              42,2           Bot
+/*
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: almishch <almishch@student.your42network>  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/22 20:09:31 by almishch          #+#    #+#             */
+/*   Updated: 2024/04/22 20:09:31 by almishch         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+/*#include ¨libft.h¨*/
+#include <stdio.h>
+#include <stddef.h>
+
+void    *ft_memmove(void *dst, const void *src, size_t n) /*copy block of memory from one place to another*/
+{
+    size_t i; /*loop*/
+    char *d; /*ukazatel na char dlia  massiv naznachenia*/
+    char *s; /*ukazatel na const char dlia ishodnogo massiva*/
+
+    i = 0;
+ft_memmove.c [+]                                              1,2            Top
+/*i
+        while (n-- >0)
+        {
+            d[n]=s[n]; /*kopirovanie elementov s konza massiva*/
+        }
+    }
+        else  /*kopirovanie s nachala v konez, esli dst raspolozen do src*/
+            while   (i<n)
+              {
+                d[i]=s[i];  /*kopirovanie elementov s nachala*/
+                i++;
+            }
+
+    return(dst); /*vozvrat ukazatelia na oblast naznachenia*/
+}
+    int main ()
+{
+    char test[10] = "Test";
+    printf("%s\n", test);
+    return(0);
+}
+
+~
+~
+ft_memmove.c [+]                                              42,2           Bot
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: almishch <almishch@student.your42network>  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/22 20:09:31 by almishch          #+#    #+#             */
+/*   Updated: 2024/04/22 20:09:31 by almishch         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+/*#include ¨libft.h¨*/
+#include <stdio.h>
+#include <stddef.h>
+
+void    *ft_memmove(void *dst, const void *src, size_t n) /*copy block of memory from one place to another*/
+{
+    size_t i; /*loop*/
+    char *d; /*ukazatel na char dlia  massiv naznachenia*/
+    char *s; /*ukazatel na const char dlia ishodnogo massiva*/
+
+    i = 0;
+        while (n-- >0)
+    if (d>s) /*kopirovanie s konza v nachalo, esli dst raspolozen  posle src v pamiaty*/
+    {
+        while (n-- >0)
+        {
+            d[n]=s[n]; /*kopirovanie elementov s konza massiva*/
+        }
+    }
+        else  /*kopirovanie s nachala v konez, esli dst raspolozen do src*/
+            while   (i<n)
+              {
+                d[i]=s[i];  /*kopirovanie elementov s nachala*/
+                i++;
+            }
+
+    return(dst); /*vozvrat ukazatelia na oblast naznachenia*/
+}
+ /*   int main ()
+{
+    char test[10] = "Test";
+    printf("%s\n", test);
+    return(0);
+}*/
