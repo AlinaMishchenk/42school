@@ -51,15 +51,15 @@ SRC = \
 		ft_tolower.c \
 
 BONUS = \
-		ft_lstadd_back.c \
-		ft_lstadd_front.c \
-		ft_lstclear.c \
-		ft_lstdelone.c \
-		ft_lstiter.c \
-		ft_lstlast.c \
-		ft_lstmap.c \
-		ft_lstnew.c \
-		ft_lstsize.c \
+		ft_lstadd_back_bonus.c \
+		ft_lstadd_front_bonus.c \
+		ft_lstclear_bonus.c \
+		ft_lstdelone_bonus.c \
+		ft_lstiter_bonus.c \
+		ft_lstlast_bonus.c \
+		ft_lstmap_bonus.c \
+		ft_lstnew_bonus.c \
+		ft_lstsize_bonus.c \
 
 OBJ = ${SRC:.c=.o}
 
@@ -71,21 +71,16 @@ COMPILE = gcc $(CFLAGS) -c
 
 LIB = ar rc $(NAME)
 
-RANLIB = ranlib $(NAME)
-
 REMOVE = rm -f
 
 all: $(NAME)
-
-$(NAME):
+$(NAME): $(OBJ)
 	@$(COMPILE) $(SRC)
 	@$(LIB) $(OBJ)
-	@$(RANLIB)
 
-bonus:
+bonus:$(NAME)
 	@$(COMPILE) $(BONUS)
 	@$(LIB) $(BONUS_OBJ)
-	@$(RANLIB)
 
 clean:
 	@$(REMOVE) $(OBJ) $(BONUS_OBJ)
