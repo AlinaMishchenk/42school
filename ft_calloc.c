@@ -64,3 +64,12 @@ void	*ft_calloc(size_t count, size_t n)
 		tmp[i++] = 0;
 	return (tmp);
 }*/
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char *a;
+	a = (char *)ft_calloc(1,1);
+	printf("%c", *a);
+}*/
