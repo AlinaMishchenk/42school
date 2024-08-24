@@ -14,6 +14,7 @@
 //character according to the ASCII table.
 //It considers characters in the range from 32 to 126,
 //inclusive, as printable characters.
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -21,3 +22,7 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+/*int	main(void)
+{
+	printf("%d", ft_isprint('p'));
+}*/
