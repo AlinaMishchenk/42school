@@ -6,7 +6,7 @@
 #    By: almishch <almishch@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/30 15:27:29 by almishch          #+#    #+#              #
-#    Updated: 2024/08/01 15:38:55 by almishch         ###   ########.fr        #
+#    Updated: 2024/08/24 19:44:52 by almishch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,14 +74,14 @@ LIB = ar rc $(NAME)
 REMOVE = rm -f
 
 all: $(NAME)
+
 $(NAME): $(OBJ)
 	@$(COMPILE) $(SRC)
 	@$(LIB) $(OBJ)
 
-bonus:$(NAME)
+bonus: $(NAME)
 	@$(COMPILE) $(BONUS)
 	@$(LIB) $(BONUS_OBJ)
-
 clean:
 	@$(REMOVE) $(OBJ) $(BONUS_OBJ)
 
@@ -90,4 +90,4 @@ fclean: clean
 
 re: fclean all bonus
 
-.PHONY: all clean fclean re bonus /
+.PHONY: all clean fclean re bonus
