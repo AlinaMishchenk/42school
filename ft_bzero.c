@@ -22,3 +22,12 @@ void	ft_bzero(void *s, size_t n)
 	while (n--)
 		*(unsigned char *)s++ = 0;
 }
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	a[] = "stars";
+
+	ft_bzero(a, 3);
+	printf("%c", a[3]);
+}*/
