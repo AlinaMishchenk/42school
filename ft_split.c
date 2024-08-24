@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//1. Podschet kolichestva slov v stroke 
+ 
 static size_t	count_words(char const *s, char c)
 {
 	size_t	count;
