@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 //Checks if a character is a whitespace character.
+#include "libft.h"
 
 int	ft_isspace(int c)
 {
@@ -19,3 +20,8 @@ int	ft_isspace(int c)
 		return (1);
 	return (0);
 }
+
+/*int	main(void)
+{
+	printf("%d", ft_isspace(' '));
+}*/
