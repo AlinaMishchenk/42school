@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 //Checks if a character is alphanumeric.
 int	ft_isalnum(int c)
 {
@@ -19,3 +21,9 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+/*#include <stdio.h>
+
+int	main(void)
+{
+	printf("%d", ft_isalnum('b'));
+}*/
