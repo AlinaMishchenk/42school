@@ -6,7 +6,7 @@
 /*   By: almishch <almishch@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 15:33:22 by almishch          #+#    #+#             */
-/*   Updated: 2024/08/16 16:46:44 by almishch         ###   ########.fr       */
+/*   Updated: 2024/08/22 15:40:22 by almishch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,3 +55,9 @@ int	ft_atoi(const char *str)
 	}
 	return (i);
 }
+/*#include <stdio.h>
+
+int main()
+{
+	printf("%d", ft_atoi("     -658hfc345"));
+}*/
