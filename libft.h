@@ -49,7 +49,7 @@ void	*ft_memset(void *str, int c, size_t n);
 int		ft_atoi(char const *str);
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
-/*char	*ft_strchr(char const *str, int c);*/
+char	*ft_strchr(char const *str, int c);
 char	*ft_strdup(char const *src);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char const *s1, char const *s2);
