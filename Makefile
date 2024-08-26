@@ -10,7 +10,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-
 NAME = libft.a
 
 SRC = \
@@ -62,8 +61,8 @@ BONUS = \
 		ft_lstsize_bonus.c \
 
 OBJ = ${SRC:.c=.o}
-
 BONUS_OBJ = ${BONUS:.c=.o}
+OBJ_ALL = $(OBJ) $(BONUS_OBJ)
 
 CFLAGS = -Wall -Werror -Wextra
 
@@ -79,15 +78,16 @@ $(NAME): $(OBJ)
 	@$(COMPILE) $(SRC)
 	@$(LIB) $(OBJ)
 
-bonus: $(NAME)
-	@$(COMPILE) $(BONUS)
+bonus: $(OBJ) $(BONUS_OBJ)
 	@$(LIB) $(BONUS_OBJ)
+
 clean:
 	@$(REMOVE) $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
 	@$(REMOVE) $(NAME)
 
-re: fclean all bonus
+re: fclean all
 
 .PHONY: all clean fclean re bonus
+
